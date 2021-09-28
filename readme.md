@@ -2,7 +2,7 @@
 
 ---
 
-[welcome](https://goggles.com)
+[welcome](https://goggles4u.com)
 
 - Would you like to eat?
 	* How's a boyt a drink?
