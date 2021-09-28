@@ -15,4 +15,4 @@
 ## rEflection
 
 > suppose `./world.exe` heard your hello.
-> what woukd you do?
+> are your really ready for them to reszpond??
