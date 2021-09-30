@@ -1,0 +1,15 @@
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.vbproj.AssemblyReference.cache
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.AssemblyInfoInputs.cache
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.AssemblyInfo.vb
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.vbproj.CoreCompileInputs.cache
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\Dragon.exe
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\Dragon.deps.json
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\Dragon.runtimeconfig.json
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\Dragon.dll
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\ref\Dragon.dll
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\bin\Debug\net6.0\Dragon.pdb
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.dll
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\ref\Dragon.dll
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.pdb
+C:\Revature\mdamle-code\Week01\ProteusDataStructure\Dragon\obj\Debug\net6.0\Dragon.genruntimeconfig.cache
