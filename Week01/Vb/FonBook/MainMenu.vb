@@ -1,7 +1,13 @@
+Imports System.IO
+Imports System.Text.Json
+
 Class MainMenu
     Implements IMenu
 
     Dim friends As List(of Contact) = new List(of Contact)
+    Dim filename As String = "friends.json"
+    Dim jsonstring As String = ""
+    
 
     Sub Initialize() Implements IMenu.Start
         Dim repeat As Boolean = True
@@ -47,10 +53,25 @@ Class MainMenu
 
     Sub ShowContacts()
         Console.WriteLine("Contact list + contact info:")
-        For Each person As Contact In friends
+        For Each person As Contact In GetContactsFromFile()
             Console.WriteLine(person)
         Next
     End Sub
     
+    Sub AddContactsToFile(ByVal person As Contact)
+        Dim existingContacts As List(of Contact) = GetContactsFromFile()
+        existingContacts.Add(person)
+        jsonstring = JsonSerializer.Serialize(existingContacts)
+        File.WriteAllText(filename, jsonstring)
+    End Sub
+
+    Function GetContactsFromFile() As List(of Contact)
+        Try
+            jsonstring = File.ReadAllText(filename)
+            return JsonSerializer.Deserialize(of List(of Contact)) (jsonstring)
+        Catch ex As Exception
+            return new List(of Contact)
+        End Try
+    End Function
 
 End Class
