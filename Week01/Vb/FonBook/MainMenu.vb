@@ -4,8 +4,11 @@ Class MainMenu
     Sub Initialize() Implements IMenu.Start
         Dim repeat As Boolean = True
         Do While repeat
-            Console.WriteLine("Who're you gonna call?\n\ttype ...")
+            Console.WriteLine("Who're you gonna call?")
+            Console.WriteLine(" type ...")
             Console.WriteLine("Are you gonna call?")
+            Console.WriteLine(" type 1")
+            Console.WriteLine("     type 2 to say no")
             Dim value As Integer = Integer.Parse(Console.ReadLine)
             Select Case value
                 Case 1
@@ -18,5 +21,5 @@ Class MainMenu
             End Select
         Loop
     End Sub
-    
+
 End Class
