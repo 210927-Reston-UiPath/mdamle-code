@@ -2,9 +2,9 @@ Imports System
 
 Module Program
     Sub Main(args As String())
-        Console.WriteLine("Hello World!")
-
-        Dim friend1 As Dragon = new Dragon("ramesh")
+        '-----------------------------------------------------------
+        ' Instantiating a Dragon named "Ramesh", and calling their behaviors
+        Dim friend1 As Dragon = new Dragon("Ramesh")
         friend1.printName()
         friend1.printFavFoods()
     End Sub

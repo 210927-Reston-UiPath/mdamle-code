@@ -1,14 +1,20 @@
 Class Dragon
+    '-----------------------------------------------------------
+    ' Properties
     Public name As String
     Private weight As Double
     Private species As String
     Public Dim favFoods() As String
 
+    '-----------------------------------------------------------
+    ' Consyructors
     Public Sub New(newName As String)
         name = newName
         favFoods = {"dog", "coconut"}
     End Sub
 
+    '-----------------------------------------------------------
+    ' Behaviors / Methods / Functions & Subs
     Sub printName()
         Console.WriteLine(name)
     End Sub
