@@ -47,7 +47,8 @@ Class MainMenu
         Console.WriteLine("Number: ")
         Dim number As String = console.ReadLine()
         Dim newFriend As Contact = new Contact(name, Int32.Parse(number))
-        friends.Add(newFriend)
+        'friends.Add(newFriend)
+        AddContactsToFile(newFriend)
         Console.WriteLine(String.concat("New Contact/Friend created", Environment.NewLine, newFriend))
     End Sub
 
@@ -68,8 +69,10 @@ Class MainMenu
     Function GetContactsFromFile() As List(of Contact)
         Try
             jsonstring = File.ReadAllText(filename)
+            Console.WriteLine("JSON file found")
             return JsonSerializer.Deserialize(of List(of Contact)) (jsonstring)
         Catch ex As Exception
+            Console.WriteLine("JSON file NOT found")
             return new List(of Contact)
         End Try
     End Function
