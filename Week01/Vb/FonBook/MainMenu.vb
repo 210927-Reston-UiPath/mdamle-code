@@ -9,7 +9,7 @@ Class MainMenu
     Dim jsonstring As String = ""
     
 
-    Sub Initialize() Implements IMenu.Start
+    Public Sub Initialize() Implements IMenu.Start
         Dim repeat As Boolean = True
 
         Do While repeat
@@ -41,7 +41,7 @@ Class MainMenu
         Loop
     End Sub
 
-    Sub AddContact()
+    Private Sub AddContact()
         Console.WriteLine("Name: ")
         Dim name As String = Console.ReadLine()
         Console.WriteLine("Number: ")
@@ -52,26 +52,28 @@ Class MainMenu
         Console.WriteLine(String.concat("New Contact/Friend created", Environment.NewLine, newFriend))
     End Sub
 
-    Sub ShowContacts()
+    Private Sub ShowContacts()
         Console.WriteLine("Contact list + contact info:")
         For Each person As Contact In GetContactsFromFile()
             Console.WriteLine(person)
         Next
     End Sub
     
-    Sub AddContactsToFile(ByVal person As Contact)
+    Private Sub AddContactsToFile(ByVal person As Contact)
         Dim existingContacts As List(of Contact) = GetContactsFromFile()
         existingContacts.Add(person)
         jsonstring = JsonSerializer.Serialize(existingContacts)
         File.WriteAllText(filename, jsonstring)
     End Sub
 
-    Function GetContactsFromFile() As List(of Contact)
+    Private Function GetContactsFromFile() As List(of Contact)
         Try
             jsonstring = File.ReadAllText(filename)
+            Console.WriteLine(jsonstring)
             Console.WriteLine("JSON file found")
-            return JsonSerializer.Deserialize(of List(of Contact)) (jsonstring)
+            return JsonSerializer.Deserialize(of List(of Contact))(jsonstring)
         Catch ex As Exception
+            Console.WriteLine(Ex.Message)
             Console.WriteLine("JSON file NOT found")
             return new List(of Contact)
         End Try
