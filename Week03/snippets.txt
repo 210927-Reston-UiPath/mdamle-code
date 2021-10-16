@@ -1,0 +1,6 @@
+insert into associates (associateName, associateLocale, revaPoints) values 
+('Robbie', 'GA', 50), ('Alex', 'MN', 50), ('Jacob', 'FL', 0), ('Juniper', 'WA', 197), ('Janel', 'AZ', 50), ('James', 'PA', 18), ('Phoebe', 'WA', 199);
+insert into trainers (trainerName, campus, caffeineLevel) values
+('Marielle', 'USF', 60), ('Pushpinder', 'UTA', 50), ('Nick', 'UTA', 75), ('Mark', 'WVU', 16), ('Fred', 'UTA', 25);
+insert into batch (associateID, trainerID) values
+(3,3), (1,4), (2,2), (4,1), (6,3), (7,1);
